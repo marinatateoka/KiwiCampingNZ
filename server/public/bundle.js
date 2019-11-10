@@ -194,7 +194,8 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "wrapper"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'images/1.motuoraIsland.jpg'
+        src: 'images/1.motuoraIsland.jpg',
+        className: "picture"
       })));
     }
   }]);
@@ -255,7 +256,10 @@ function (_React$Component) {
         className: "header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "title"
-      }, "KiwiCampingNZ"));
+      }, "KiwiCampingNZ"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: 'images/kiwi.png',
+        className: "kiwi"
+      }));
     }
   }]);
 

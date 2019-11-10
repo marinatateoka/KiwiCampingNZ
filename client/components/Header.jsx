@@ -6,6 +6,7 @@ class Header extends React.Component {
     return (
         <div className='header'>
             <h1 className= 'title'>KiwiCampingNZ</h1>
+               <img src={'images/kiwi.png'} className='kiwi' />
         </div>
     )
   }

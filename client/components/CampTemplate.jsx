@@ -7,9 +7,9 @@ class CampTemplate extends React.Component {
     return (
       <div className='wrapper'>
         <div>
-          <img src={'images/1.motuoraIsland.jpg'}/>
+          <img src={'images/1.motuoraIsland.jpg'} className='picture'/>
         </div>
-        
+
       </div>
     )
   }

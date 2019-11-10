@@ -193,7 +193,9 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "wrapper"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Hello"));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: 'images/1.motuoraIsland.jpg'
+      })));
     }
   }]);
 

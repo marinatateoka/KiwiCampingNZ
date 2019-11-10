@@ -1,9 +1,18 @@
 import React from 'react'
+import Header from './Header'
+import CampTemplate from './CampTemplate'
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
+class App extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Header />
+        <CampTemplate />
+      </React.Fragment>
+    )
+  }
 }
+
+
 
 export default App

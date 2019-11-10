@@ -1,28 +1,24 @@
-# A starter webpack project for React
+# KiwiCampingNZ
 
-This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
+This is my personal project that I am currently working on.
 
-* Fork this repo
-* Rename your repo according to the app you're building
+* MVP (Minimun Vaiable Project)
 
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && npm i
-```
+It will display a list of campsites in New Zealand in an easy way where the user will see a picture of the campsite, name, address and the facilities of the campsite displayed as icons. It will also have a link to the original website and a review section.
 
-To start the development server with a watcher that rebuilds your code, run `npm run dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
+On the review section the user will be able to write comments and view other users' comments.
 
-Additional components should be placed in `client/components`.
+As MVP I will start with a list of 5 Campsites with the intetion to have all of campsites in New Zealand.
 
-## Separate client/server
+* Stretch
 
-The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
-```sh
-npm run client
-```
-and in the other:
-```sh
-npm run server
-```
-The client will be available on http://localhost:8080 and the server on http://localhost:3000. Note that you will still need to manage CORS between the two, as they are on different ports.
+Be able to include a list of all campsites in New Zealand.
+Have a booking section.
+Display the icons of the campinsites on google maps.
+Review's Section - to include the stars' rating according to users' opinion.
+
+## Technologies 
+
+React, APIs, HTML, CSS and Javascript
+
 

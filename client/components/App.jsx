@@ -8,6 +8,8 @@ class App extends React.Component {
       <React.Fragment>
         <Header />
         <CampTemplate />
+        <CampTemplate />
+        <CampTemplate />
       </React.Fragment>
     )
   }

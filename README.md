@@ -21,4 +21,7 @@ Review's Section - to include the stars' rating according to users' opinion.
 
 React, APIs, HTML, CSS and Javascript
 
+## Under construction
+
+![Home_page](kiwiCampingNZ.png)
 

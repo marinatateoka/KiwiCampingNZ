@@ -1,13 +1,14 @@
 import React from 'react'
 
-const CampTemplate = (props) => {
-  const campItem = props.campItem
+function CampTemplate (props) {
+  const { campItem } = props
   
   return (
     <div className='wrapper'>
       <div>
+       <p>{campItem.name}</p>
         <img src={'images/1.motuoraIsland.jpg'} className='picture'/>
-        {/* <p>{campItem.name}</p> */}
+      
       </div>
 
     </div>

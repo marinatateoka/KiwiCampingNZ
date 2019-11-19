@@ -1,19 +1,17 @@
 import React from 'react'
 
-
-
-class CampTemplate extends React.Component {
-  render() {
-    return (
-      <div className='wrapper'>
-        <div>
-          <img src={'images/1.motuoraIsland.jpg'} className='picture'/>
-        </div>
-
+const CampTemplate = (props) => {
+  const campItem = props.campItem
+  
+  return (
+    <div className='wrapper'>
+      <div>
+        <img src={'images/1.motuoraIsland.jpg'} className='picture'/>
+        {/* <p>{campItem.name}</p> */}
       </div>
-    )
-  }
-}
 
+    </div>
+  )
+}
 
 export default CampTemplate

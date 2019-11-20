@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from './Header'
-import CampTemplate from './CampTemplate'
+import Myheader from './Myheader'
 import CampList from './CampList'
 
 class App extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <Header />
+        <Myheader />
         <CampList />
       </React.Fragment>
     )

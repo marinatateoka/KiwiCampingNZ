@@ -1,10 +1,9 @@
 import React from 'react'
-import Myheader from './Myheader'
 import Subheader from './Subheader'
 import CampList from './CampList'
 import Menubar from './Menubar'
-import { Menu } from 'semantic-ui-react'
-// import Home from './Home'
+import CampTemplate from './CampTemplate'
+
 
 class App extends React.Component {
   render () {
@@ -13,10 +12,6 @@ class App extends React.Component {
         <Menubar />
         <Subheader />
         <CampList /> 
-        <CampList /> 
-        <CampList /> 
-        <CampList /> 
-        {/* <Home /> */}
       </React.Fragment>
     )
   }

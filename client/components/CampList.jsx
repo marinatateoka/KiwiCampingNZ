@@ -2,6 +2,7 @@ import React from 'react'
 import campData from '../../data/campList'
 import CampTemplate from './CampTemplate'
 
+
 class CampList extends React.Component {
   render () {
     return (
@@ -9,6 +10,7 @@ class CampList extends React.Component {
         {campData.campList.map(campItem => {
           return <CampTemplate key={campItem.id} campItem={campItem} />
         })}
+       
       </div>
     )
   }

@@ -98,7 +98,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Myheader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Myheader */ "./client/components/Myheader.jsx");
-/* harmony import */ var _CampList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CampList */ "./client/components/CampList.jsx");
+/* harmony import */ var _Subheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Subheader */ "./client/components/Subheader.jsx");
+/* harmony import */ var _CampList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CampList */ "./client/components/CampList.jsx");
+/* harmony import */ var _Menubar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Menubar */ "./client/components/Menubar.jsx");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -121,6 +124,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+ // import Home from './Home'
+
 var App =
 /*#__PURE__*/
 function (_React$Component) {
@@ -135,7 +141,7 @@ function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Myheader__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CampList__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Menubar__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Subheader__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CampList__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CampList__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CampList__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CampList__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
   }]);
 
@@ -226,16 +232,129 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function CampTemplate(props) {
   var campItem = props.campItem;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Segment"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Image"], {
-    src: 'images/1.motuoraIsland.jpg',
-    size: "small",
-    floated: "left"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, campItem.name));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Image"], {
+    className: "picture",
+    src: 'images/1.motuoraIsland.jpg'
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "details"
+  }, campItem.name, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "address"
+  }, campItem.address)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "button"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    className: "button"
+  }, "Review"))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (CampTemplate);
+
+/***/ }),
+
+/***/ "./client/components/Menubar.jsx":
+/*!***************************************!*\
+  !*** ./client/components/Menubar.jsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Menubar; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var Menubar =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Menubar, _Component);
+
+  function Menubar() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Menubar);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Menubar)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {});
+
+    _defineProperty(_assertThisInitialized(_this), "handleItemClick", function (e, _ref) {
+      var name = _ref.name;
+      return _this.setState({
+        activeItem: name
+      });
+    });
+
+    return _this;
+  }
+
+  _createClass(Menubar, [{
+    key: "render",
+    value: function render() {
+      var activeItem = this.state.activeItem;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"], {
+        color: "teal",
+        style: {
+          paddingTop: '2%',
+          paddingRight: '2%'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
+        header: true,
+        position: "right",
+        name: "login",
+        active: activeItem === 'login',
+        onClick: this.handleItemClick
+      }, "Log in"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
+        position: "right",
+        name: "signup",
+        active: activeItem === 'signup',
+        onClick: this.handleItemClick
+      }, "Sign up"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "title"
+      }, "Kiwi Camping"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: 'images/kiwi.png',
+        className: "kiwi"
+      })));
+    }
+  }]);
+
+  return Menubar;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
 
 /***/ }),
 
@@ -243,6 +362,73 @@ function CampTemplate(props) {
 /*!****************************************!*\
   !*** ./client/components/Myheader.jsx ***!
   \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Menubar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Menubar */ "./client/components/Menubar.jsx");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Myheader =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Myheader, _React$Component);
+
+  function Myheader() {
+    _classCallCheck(this, Myheader);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Myheader).apply(this, arguments));
+  }
+
+  _createClass(Myheader, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "myheader"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Menubar__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "title"
+      }, "Kiwi Camping"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: 'images/kiwi.png',
+        className: "kiwi"
+      })));
+    }
+  }]);
+
+  return Myheader;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Myheader);
+
+/***/ }),
+
+/***/ "./client/components/Subheader.jsx":
+/*!*****************************************!*\
+  !*** ./client/components/Subheader.jsx ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -272,35 +458,30 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Myheader =
+var Subheader =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(Myheader, _React$Component);
+  _inherits(Subheader, _React$Component);
 
-  function Myheader() {
-    _classCallCheck(this, Myheader);
+  function Subheader() {
+    _classCallCheck(this, Subheader);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Myheader).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Subheader).apply(this, arguments));
   }
 
-  _createClass(Myheader, [{
+  _createClass(Subheader, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Header"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "header"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "title"
-      }, "KiwiCamping"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'images/kiwi.png',
-        className: "kiwi"
-      })));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        className: "subheader"
+      }, "Find unique campsties to stay")));
     }
   }]);
 
-  return Myheader;
+  return Subheader;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Myheader);
+/* harmony default export */ __webpack_exports__["default"] = (Subheader);
 
 /***/ }),
 
@@ -350,34 +531,6 @@ __webpack_require__.r(__webpack_exports__);
     hotShower: false,
     coldShower: false,
     flushToilet: false,
-    beachFront: true
-  }, {
-    id: 2,
-    name: 'Poukaraka Flats',
-    address: '75 Gordons Road Omiha',
-    poweredSite: false,
-    unpoweredSite: true,
-    tent: true,
-    campervan: false,
-    potableWater: true,
-    KitchenFacitilies: true,
-    hotShower: false,
-    coldShower: true,
-    flushToilet: true,
-    beachFront: true
-  }, {
-    id: 3,
-    name: 'Waihi Beach TOP 10',
-    address: '15 Beach Road Waihi Beach 3611',
-    poweredSite: true,
-    unpoweredSite: true,
-    tent: true,
-    campervan: true,
-    potableWater: true,
-    KitchenFacitilies: true,
-    hotShower: true,
-    coldShower: true,
-    flushToilet: true,
     beachFront: true
   }]
 });

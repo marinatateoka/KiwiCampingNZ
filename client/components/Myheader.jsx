@@ -1,16 +1,26 @@
 import React from 'react'
+import Menubar from './Menubar'
 
-import { Header } from 'semantic-ui-react'
+import { 
+  Header, 
+  Container,
+ } from 'semantic-ui-react'
 
 class Myheader extends React.Component {
   render () {
-    return (
-      <Header>
-        <div className='header'>
-          <h1 className= 'title'>KiwiCamping</h1>
-          <img src={'images/kiwi.png'} className='kiwi' />
-        </div>
-      </Header>
+    return (   
+    <div className='myheader'>
+    <Container>
+      <Menubar />
+           
+            <h1 className= 'title'>Kiwi Camping</h1> 
+            <img src={'images/kiwi.png'} className='kiwi' />
+        
+    </Container> 
+    </div>
+    
+         
+    
     )
   }
 }

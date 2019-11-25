@@ -4,14 +4,12 @@ const router = express.Router()
 
 const db = require('../db/db')
 
-router.get('/campList', (req, res) => {
+router.get('/', (req, res) => {
   db.getCampList()
-    .then(displayCampList)
-    .catch(err => res.status(500).send(err.message))
-
-  function displayCampList (categories) {
-    res.json(categories)
-  }
+    .then(campList => {
+      res.json(campList)
+    })
+    .catch(err => res.status(500).send(err.message))  
 })
 
 module.exports = router

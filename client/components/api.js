@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const campsUrl = '/api/v1/camps/'
+const campsUrl = 'http://localhost:3000/api/v1/camps'
 
 export function getCampList () {
   return request

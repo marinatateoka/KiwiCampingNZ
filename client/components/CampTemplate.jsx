@@ -8,12 +8,12 @@ function CampTemplate (props) {
   return (
     <>
     <div className='wrapper'>
-      <Image className='picture' src={'images/1.motuoraIsland.jpg'}/>
+       <Image className='picture' src={'images/1.motuoraIsland.jpg'}/>  
       <div>
         <p className='details'>
-          {campItem.name} </p>
+          {campItem.Name} </p>
         <p className='address'>
-          {campItem.address}
+          {campItem.Address}
         </p>
       </div>
       <div className='button'>

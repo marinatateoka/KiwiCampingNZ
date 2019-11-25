@@ -8,9 +8,9 @@
   "license": "ISC",
   "scripts": {
     "client": "webpack-dev-server --hot --inline",
-    "dev": "node server & webpack --watch",
-    "server": "node server",
-    "start": "webpack && node server",
+    "dev": "nodemon server & webpack --watch",
+    "server": "nodemon server",
+    "start": "webpack && nodemon server",
     "test": "jest --watchAll"
   },
   "babel": {
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "knex": "^0.20.1",
+    "knex": "^0.20.2",
     "prop-types": "^15.7.2",
     "semantic-ui-react": "^0.88.1",
     "sqlite3": "^4.1.0",
@@ -48,6 +48,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "jest": "^24.7.1",
+    "nodemon": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "webpack": "^4.29.6",

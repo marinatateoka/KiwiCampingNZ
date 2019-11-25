@@ -24,6 +24,9 @@ componentDidMount() {
         {campData.campList.map(campItem => {
           return <CampTemplate key={campItem.id} campItem={campItem} />
         })}
+        {/* {campData.campList.map(campItem => {
+          return <CampTemplate key={campItem.id} campItem={campItem} />
+        })} */}
        
       </div>
     )

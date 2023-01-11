@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "knex": "^0.20.2",
+    "knex": "^2.4.0",
     "prop-types": "^15.7.2",
     "semantic-ui-react": "^0.88.1",
     "sqlite3": "^4.1.0",
